@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<script>
+  const { app } = require('electron').remote
+  console.log('123', app.getVersion())
+</script>
+<link rel="stylesheet" type="text/css" href="./index.css"/>
+<script type="text/javascript" src="./index.js"></script>
+<body>
+  <div>
+    <flexbox>
+      <input type="text" placeholder="输入路径" id="input" />
+      <input type="button" value="路径" id='input_btn' onclick="onGetFolder()"/>
+    </flexbox>
+
+    <flexbox>
+      <input type="text" placeholder="输出路径" id="output" />
+      <input type="button" value="路径" id='output_btn' onclick="onGetFolder()"/>
+    </flexbox>
+    <flexbox>
+      <input type="text" id='prefix'/>
+      <p>+编号+</p>
+      <input type="text" id='suffix'/>
+    </flexbox>
+    <flexbox>
+      <input type="button" value="开始改名"/>
+    </flexbox>
+  </div>
+
+</body>
+
+</html>
