@@ -7,3 +7,9 @@ flexbox{
     width: 100%;
     margin: 2rem;
 }
+#dirList{
+    background: #FFF;
+    position: absolute;
+    top:30px;
+    left: 30px;
+}

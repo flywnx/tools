@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "start_babel": "babel-node ./main.js"
+    "package": "electron-packager ./ --all --out ../../batch_rename --overwrite --icon=./batch_rename.ico"
   },
   "author": "jlb",
   "license": "ISC",
